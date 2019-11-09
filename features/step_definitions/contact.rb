@@ -1,5 +1,4 @@
 Given(/^user visit homepage$/) do
-  puts 'visiting url:' + $URL
   visit $URL
 end
 
