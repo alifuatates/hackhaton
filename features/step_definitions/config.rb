@@ -1,1 +1,5 @@
-$URL = 'https://www.kloia.com'
+module BaseConstants
+
+  $timeout = 20
+
+end

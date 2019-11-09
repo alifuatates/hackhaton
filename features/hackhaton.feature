@@ -8,3 +8,4 @@ Feature: kloia.com contact form
     And fill "Company name" with "has kloia"
     And fill "Email*" with "team2@gmail.com"
     And click Submit button
+    Then page should contain "Thanks for your message. We'll be in contact shortly." content
