@@ -11,10 +11,8 @@ When(/^click Submit button$/) do |button|
   click_button('Submit')
 end
 
-Then(/^page (should|should_not) contain "([^"]*)" content at kloia at kloia$/) do |condition, content|
-  # E.g. : page should contain "Test" content
-  # E.g. : page should_not contain "Test" content
-  # page.should have_content(content, count: count, wait: $timeout)
+Then(/^page (should|should_not) contain "([^"]*)" content at kloia$/) do |condition, content|
+
   sleep 1
   if condition == 'should'
     page.should have_content(content, wait: $timeout)
