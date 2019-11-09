@@ -1,3 +1,4 @@
+require 'bdd-helper'
 require 'capybara'
 require 'capybara/dsl'
 require 'rspec'
@@ -7,7 +8,6 @@ include RSpec::Matchers
 RSpec.configure do |config|
   config.include Capybara::DSL, type: :feature
 end
-
 
 $browser = 'chrome'
 
